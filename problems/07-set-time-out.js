@@ -23,7 +23,18 @@ function partyFunc () {
 }
 
 funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
+////////////////////////////////////////////////////////////////////////
 
+// function build () {
+//   console.log('I love building')
+// }
+// function destroy () {
+//   console.log('I love destroying')
+// }
+
+// setTimeout(destroy, 2000) // 3
+// setTimeout(build, 1900) // 2
+// setTimeout(destroy, 500) // 1
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
