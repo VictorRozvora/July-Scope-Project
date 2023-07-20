@@ -14,7 +14,25 @@ arrowGetFullName(p2); // => 'Charlie Brown'
 
 ***********************************************************************/
 
-// Your code here
+const arrowGetFullName = (person) => {
+  return `${person.firstName} ${person.lastName}` // string interpolation
+}
+// let fullName = [];
+// for (let key in person) {
+//   let value = person[key];
+//   if (typeof value === "string") fullName.push(value);
+// }
+// return fullName.join(" ");
+// };
+// for(let num of array) 
+// for(let i = 0; i < array.length; i++) {
+//   let num = array[i]
+// }
+
+let p1 = {firstName: 'John', lastName: 'Doe'};
+console.log(arrowGetFullName(p1)); // => 'John Doe'
+let p2 = {firstName: 'Charlie', lastName: 'Brown', age: 9};
+arrowGetFullName(p2); // => 'Charlie Brown'
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
