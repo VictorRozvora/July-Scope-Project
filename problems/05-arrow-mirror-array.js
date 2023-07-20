@@ -9,7 +9,19 @@ Examples:
 arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
 arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 ***********************************************************************/
+const arrowMirrorArray = (array) => {
+let original = [...array];
+let reverse = array.reverse();
+let total = [...original, ...reverse];
+return total;
 
+}
+
+const reverseString = (str) => {
+  return `${str}${str.split('').reverse().join('')}`
+
+}
+console.log(reverseString('hello'));
 // Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

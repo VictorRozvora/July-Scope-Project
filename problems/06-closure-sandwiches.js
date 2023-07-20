@@ -16,7 +16,13 @@ let sandwich2 = sandwichMaker(); // => returns a function
 sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
+const sandwichMaker = () => {
+  let order = `One sandwich with tomato`
 
+  return function(newIngredient) {
+    return order += ` and ${newIngredient}`;
+  }
+}
 // Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
